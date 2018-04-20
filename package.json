@@ -22,15 +22,15 @@
 		}
 	},
 	"configs":{
-		"thema_color":{
+		"copyright":{
 			"title":{
-				"ko":"테마색"
+				"ko":"카피라이트"
 			},
 			"help":{
-				"ko":"네비게이션바 색상 등 홈페이지 전반적으로 사용되는 테마색을 설정하여 주십시오."
+				"ko":"사이트하단에 나올 카피라이트 문구를 입력하여 주십시오.({DOMAIN} : 사이트 도메인, {YEAR} : 현재년도로 치환됩니다.)"
 			},
-			"type":"color",
-			"default":"#1479bb"
+			"type":"string",
+			"default":"ⓒ {DOMAIN}, {YEAR}"
 		}
 	},
 	"styles":[

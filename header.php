@@ -2,20 +2,15 @@
 /**
  * 이 파일은 iModule 사이트템플릿(default)의 일부입니다. (https://www.imodule.kr)
  *
- * iModule 사이트 템플릿으로 iModule 코어에 포함되어 있는 기본템플릿은 주석이 있다.
- * 주석이 없는 템플릿은 iModule 웹사이트에서 다운로드 받을 수 있다.
+ * iModule 기본 사이트템플릿 - 템플릿 헤더
  * 
  * @file /templets/default/header.php
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
- * @version 3.0.0.160905
+ * @version 3.0.0
+ * @modified 2018. 4. 20.
  */
 if (defined('__IM__') == false) exit;
-
-/**
- * 헤더가 출력되었는지 확인하기 위한 상수 정의
- */
-define('__IM_HEADER_INCLUDED__',true);
 
 /**
  * 언어셋에 따라 웹폰트를 불러온다.
@@ -26,11 +21,6 @@ if ($IM->getLanguage() == 'ko') {
 } else {
 	$IM->loadWebFont('OpenSans',true);
 }
-
-/**
- * 템플릿 설정에 지정된 색깔코드를 사용하기 위한 스타일시트를 불러온다.
- */
-$IM->addHeadResource('style',$Templet->getDir().'/styles/thema.css.php?language='.$IM->getLanguage());
 ?>
 <header>
 	<?php
@@ -69,6 +59,11 @@ $IM->addHeadResource('style',$Templet->getDir().'/styles/thema.css.php?language=
 				 */
 				foreach ($IM->getSitemap() as $menu) {
 					/**
+					 * 숨김처리된 메뉴는 표시하지 않는다.
+					 */
+					if ($menu->is_hide == true) continue;
+					
+					/**
 					 * 메뉴에 아이콘이 설정되어 있을 경우, 아이콘을 가져온다.
 					 * @see /classes/iModule.class.php -> parseIconString()
 					 */
@@ -86,6 +81,11 @@ $IM->addHeadResource('style',$Templet->getDir().'/styles/thema.css.php?language=
 					<ul>
 						<?php
 						foreach ($menu->pages as $page) {
+							/**
+							 * 숨김처리된 페이지는 표시하지 않는다.
+							 */
+							if ($page->is_hide == true) continue;
+							
 							/**
 							 * 메뉴에 아이콘이 설정되어 있을 경우, 아이콘을 가져온다.
 							 * @see /classes/iModule.class.php -> parseIconString()

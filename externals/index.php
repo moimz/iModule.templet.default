@@ -8,7 +8,16 @@
  * @file /templets/default/externals/index.php
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
- * @version 3.0.0.160906
+ * @version 3.0.0
+ * @modified 2018. 4. 20.
  */
 if (defined('__IM__') == false) exit;
+?>
+<div>이곳에 INDEX 페이지에 나타날 내용을 정의할 수 있습니다.</div>
+
+<?php
+/**
+ * 로그인위젯을 불러온다.
+ */
+$IM->getWidget('member.login')->setTemplet('default')->doLayout();
 ?>
