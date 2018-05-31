@@ -1,0 +1,12 @@
+/**
+ * 이 파일은 iModule 사이트템플릿(default)의 일부입니다. (https://www.imodule.kr)
+ *
+ * 특정파일 (/templets/default/externals/index.php) 에서만 사용되는 스타일을 정의한다.
+ * 
+ * @file /templets/default/externals/styles/index.css
+ * @author Arzz (arzz@arzz.com)
+ * @license MIT License
+ * @version 3.0.0
+ * @modified 2018. 5. 31.
+ */
+div.main {padding-top:40px;}

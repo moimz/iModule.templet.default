@@ -1,0 +1,12 @@
+/**
+ * 이 파일은 iModule 사이트템플릿(default)의 일부입니다. (https://www.imodule.kr)
+ *
+ * 회원로그인 위젯 상단메뉴 템플릿 - 스타일시트
+ *
+ * @file /templets/default/widgets/member.login/topmenu/styles/style.css
+ * @author Arzz (arzz@arzz.com)
+ * @license MIT License
+ * @version 3.0.0
+ * @modified 2018. 5. 31.
+ */
+div[data-role=widget][data-widget=member-login][data-templet=topmenu] section {padding:30px 0px 10px 0px; height:40px; display:none;}
