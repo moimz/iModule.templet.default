@@ -77,8 +77,8 @@ if (defined('__IM_CONTAINER__') == true) $IM->addHeadResource('style',$Templet->
 					<div class="submenu">
 						<div class="container">
 							<div class="title">
-								<h2><?php echo $IM->parseIconString($menu->icon); ?><?php echo $IM->getMenus($menu->menu)->title; ?></h2>
-								<p><?php echo $IM->getMenus($menu->menu)->description; ?></p>
+								<h2><?php echo $IM->parseIconString($menu->icon); ?><?php echo $menu->title; ?></h2>
+								<p><?php echo $menu->description; ?></p>
 							</div>
 							
 							<div class="menus">
