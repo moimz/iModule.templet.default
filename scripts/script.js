@@ -83,7 +83,7 @@ $(document).ready(function() {
 			$list.animate({height:50},{step:function(step) {
 				var current = step - 50;
 				
-				$toggle.rotate(current/height * 180);
+				$toggle.rotate((2 * height - current)/height * 180);
 				
 				if (current == 0) {
 					$list.removeClass("opened");
