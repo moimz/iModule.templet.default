@@ -1,5 +1,5 @@
 /**
- * 이 파일은 iModule 사이트템플릿(default)의 일부입니다. (https://www.imodule.kr)
+ * 이 파일은 iModule 사이트 기본템플릿의 일부입니다. (https://www.imodules.io)
  *
  * 회원로그인 위젯 모바일 슬라이드메뉴 템플릿 - 로그인 이벤트 처리
  *
@@ -7,7 +7,7 @@
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
  * @version 3.0.0
- * @modified 2018. 5. 31.
+ * @modified 2018. 10. 4.
  */
 $(document).ready(function() {
 	var $widget = $("div[data-widget=member-login][data-templet=slide]");
